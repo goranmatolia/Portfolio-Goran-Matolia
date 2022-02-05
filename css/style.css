@@ -63,6 +63,7 @@ header nav .branding span{
     width: 400px;
     border-radius: 1px;
     clip-path:polygon(0 8.2%,100% 0,100% 91.8%,0 100%);
+    margin-bottom:3rem;
 }
 .hero .right{
     color:var(--pure);
