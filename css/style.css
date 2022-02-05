@@ -1,0 +1,229 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#19b1f8;
+    --dark:#060620;
+    --pure:#ffffff;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+}
+body{
+    font-family:Poppins,'sans-serif';
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    -webkit-font-smotthing:antialised;
+}
+header{
+    background: var(--dark);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease; 
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav .left h2{
+    color:var(--light);
+    font-weight: 3;
+    font-size: 15;
+    margin-right: 3rem;
+    align-items: center;
+}
+header nav{
+    padding:2rem 0;
+}
+header nav .branding{
+    margin-right:6rem;
+    font-size:1.5rem;
+}
+header nav .branding span{
+    color:var(--primary);
+}
+.hero{
+    padding:1rem 0;
+}
+.hero .left img{
+    width: 400px;
+    border-radius: 1px;
+    clip-path:polygon(0 8.2%,100% 0,100% 91.8%,0 100%);
+}
+.hero .right{
+    color:var(--pure);
+    margin-left:6rem;
+    margin-bottom:-1rem;
+}
+.hero .right  p span{
+    color:var(--primary);
+    font-size: 2rem;
+    line-height: 20px;
+}
+.hero .right h3{
+    font-size:1.6rem;
+    color:var(--primary);
+    margin-bottom: 0.5rem;;
+}
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.2;
+}
+.hero .right h1 span{
+    color:var(--primary);
+    font-family: 'Source Code Pro', monospace;
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: -4rem;
+}
+section{
+    padding-top:3rem;
+    padding-bottom: 6rem;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h1{
+    font-size:3rem;
+    text-align: center;
+}
+section.about h3{
+    font-size: 2rem;
+    padding-bottom:1rem;
+}
+section.about p{
+    line-height: 1.6;
+    font-size:20px;
+}
+.section-heading{
+    color:var(--dark);
+    text-align: center;
+    margin-bottom:6rem ;
+    line-height: 0.5;
+    font-size: 3rem;
+    padding-top:3rem;
+}
+section .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:2rem ;
+    grid-row-gap:2rem ;
+}
+section.skills{
+    background: var(--light);
+}
+section.skills .card-wrapper .card{
+    background: var(--pure);
+    padding:3rem 2rem;
+    border-radius: 1%;
+    color:var(--secondary);
+    text-align: center;
+}
+section.skills .card-wrapper .card img{
+    width:70px;
+}
+.project-heading{
+    color:var(--dark);
+    text-align: center;
+    margin-bottom:6rem ;
+    line-height: 0.5;
+    font-size: 3rem;
+    padding-top:3rem;
+}
+section .card-wrapper2{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:2rem ;
+    grid-row-gap:2rem ;
+}
+
+section.projects .card-wrapper2 .card2{
+    background: var(--dark);
+    padding:3rem 2rem;
+    border-radius: 1%;
+    color:var(--pure);
+    text-align: center;
+}
+section.projects .card-wrapper2 .card2 img{
+    width:200px;
+}
+.contact-heading{
+    color:var(--pure);
+    text-align: center;
+    margin-bottom:6rem ;
+    line-height: 0.5;
+    font-size: 3rem;
+    padding-top:3rem;
+}
+section.contactme .contact-heading span{
+    color:var(--primary);
+}
+section.contactme{
+    background-color: var(--dark);
+    padding:7px;
+    padding-bottom:60px;
+}
+#cm{
+    width:260px;
+}
+#m{
+    width:250px;
+}
+#ontolinks{
+    text-decoration: none;
+    display:grid;
+}
+section.contactme .card-wrapper{
+    display:grid;
+    color:var(--pure);
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap:2rem;
+    grid-row-gap:2rem;
+    text-align:center;
+}
+section.contactme .card-wrapper .card img{
+    width:100px;
+    text-decoration: none;
+}
+#call{
+    width:100px;
+}
+section.contactme .card-wrapper .card h1{
+    font-size: 2rem;
+}
+section.contactme .card-wrapper .card h6{
+    font-size: 1rem;
+}
+#text{
+    text-decoration: none;
+    color:var(--pure);
+}
+footer{
+    background-color: var(--primary);
+    text-align: center;
+}
+.footer-social a img{
+    width: 60px;
+    margin:1rem;
+}
+
+
