@@ -132,6 +132,9 @@ section .card-wrapper{
 section.skills{
     background: var(--light);
 }
+section.certifications{
+    background: var(--pure);
+}
 section.skills .card-wrapper .card{
     background: var(--pure);
     padding:3rem 2rem;
@@ -142,6 +145,17 @@ section.skills .card-wrapper .card{
 section.skills .card-wrapper .card img{
     width:70px;
 }
+section.certifications .card-wrapper .card{
+    background: var(--light);
+    padding:3rem 2rem;
+    border-radius: 1%;
+    color:var(--secondary);
+    text-align: center;
+}
+section.certifications .card-wrapper .card img{
+    width:350px;
+}
+
 .project-heading{
     color:var(--dark);
     text-align: center;
@@ -150,13 +164,24 @@ section.skills .card-wrapper .card img{
     font-size: 3rem;
     padding-top:3rem;
 }
+.certifications-heading{
+    color:var(--dark);
+    text-align: center;
+    margin-bottom:6rem ;
+    line-height: 0.5;
+    font-size: 3rem;
+    padding-top:3rem;
+}
+
 section .card-wrapper2{
     display:grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap:2rem ;
     grid-row-gap:2rem ;
 }
-
+section.projects{
+    background: var(--light);
+}
 section.projects .card-wrapper2 .card2{
     background: var(--dark);
     padding:3rem 2rem;
