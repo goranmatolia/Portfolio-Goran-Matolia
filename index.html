@@ -12,147 +12,169 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header flex>
-        <div class="container">
-        <nav class="flex items-center justify-between">
-            <div class="left flex items-center">
-                <div  class="branding">
-                    <h2>Goran <span>Matolia</span></h2>
-                </div>
-                <div>
-                    <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#certifications">Certifications</a>
-                <a href="#projects">Projects</a>
-
-                </div>
-            </div>
-            <div class="right">
-                <a href="#contactme"><button class="btn btn-primary">Contact</button></a>
-            </div>
-        </nav>
-        <div class="hero flex items-center justify-between">
-            <div class="left flex-1 flex justify-center">
-                <img src="images/IMG_1621.jpg" alt="">
-            </div>
-            <div class="right flex-1">
-                <h1>Front End <span>Developer<></span></h1>
-                <p>UI/UX and Front End Development.<br>Proficient in HTML, CSS, JavaScript and worked on projects in these Languages. I have a passion for UI effects, animations and creating intuitive, dynamic user experiences. <br> <br><span>Lets <br> make <br> something <br> special.</span></p>
-            </div>
+    <div class="site-main-wrapper">
+        <button class="hamburger">
+            <img src="./images/hamburger.svg" alt="">
+        </button>
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/close.png" alt=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
         </div>
-    </div>
-    </header>
-    <section id="about" class="about" flex>
-        <div class="container flex">
-            <div>
-                <h1>About <span>Me</span></h1>
-                <h3>Hey! I am Goran</h3>
-                <p>Inventive and keen person, I endeavour to become a better version of myself, I trust in learning new things and being enthusiastic in every aspect of life.Pursuing Btech in Computer Science.Improving at Web development and aspire to become an expert Full stack developer.<br><br>
-                Having 3 years of experience in 3d Game development through Unity, worked on several projects and also worked in the field of Video Editing and Vfx with help of Adobe’s After effects and Premiere Pro. <br>
-                Coding Languages I am Familiar with : Python, C++, C, HTML, CSS, Javascript, Java, C#, Solidity<br>
-                Environment and Apps I am Familiar with: Unity 3d, PyCharm, Visual Studio, After Effects, Premiere Pro, Github
-                <br><br>
-                Cryptocurrency being my distinct fascination I am learning Blockchain development and investing resources in Cryptos.</p>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="skills" flex>
+        <header>
             <div class="container">
-                <h1 class="section-heading">Skills</h1>
+            <nav id="main-nav" class="flex items-center justify-between">
+                <div class="left flex items-center">
+                    <div  class="branding">
+                        <h2>Goran <span>Matolia</span></h2>
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#projects">Projects</a>
+    
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#contactme"><button class="btn btn-primary">Contact</button></a>
+                </div>
+            </nav>
+            <div class="hero flex items-center justify-between">
+                <div class="left flex-1 flex justify-center">
+                    <img src="images/IMG_1621.jpg" alt="">
+                </div>
+                <div class="right flex-1">
+                    <h1>Front End <span>Developer<></span></h1>
+                    <p>UI/UX and Front End Development.<br>Proficient in HTML, CSS, JavaScript and worked on projects in these Languages. I have a passion for UI effects, animations and creating intuitive, dynamic user experiences. <br> <br><span>Lets <br> make <br> something <br> special.</span></p>
+                </div>
+            </div>
+        </div>
+        </header>
+        <section id="about" class="about" flex>
+            <div class="container flex">
+                <div>
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hey! I am Goran</h3>
+                    <p>Inventive and keen person, I endeavour to become a better version of myself, I trust in learning new things and being enthusiastic in every aspect of life.Pursuing Btech in Computer Science.Improving at Web development and aspire to become an expert Full stack developer.<br><br>
+                    Having 3 years of experience in 3d Game development through Unity, worked on several projects and also worked in the field of Video Editing and Vfx with help of Adobe’s After effects and Premiere Pro. <br>
+                    Coding Languages I am Familiar with : Python, C++, C, HTML, CSS, Javascript, Java, C#, Solidity<br>
+                    Environment and Apps I am Familiar with: Unity 3d, PyCharm, Visual Studio, After Effects, Premiere Pro, Github
+                    <br><br>
+                    Cryptocurrency being my distinct fascination I am learning Blockchain development and investing resources in Cryptos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills" flex>
+                <div class="container">
+                    <h1 class="section-heading">Skills</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="./images/web-development-svgrepo-com.svg" alt="">
+                            <h2>Web Development</h2>
+                            <p>Web development refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It also includes web design and database management.</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/games.png" alt="">
+                            <h2>Game Development</h2>
+                            <p>Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release. </p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/video-player-svgrepo-com.svg" alt="">
+                            <h2>Video Editing and Vfx</h2>
+                            <p>VFX compositors are responsible for creating photorealistic outputs by seamlessly integrating live action footage with computer graphics, 2D, 3D & special effects.</p>
+                        </div>
+                        <div class="card">
+                            <img src="./images/ml.png" alt="">
+                            <h2>Machine Learning</h2>
+                            <p>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+                        </div>
+                </div>
+        </section>
+        <section id="certifications" class="certifications" flex>
+            <div class="container">
+                <h1 class="certifications-heading">Certifications</h1>
+                <div class="card-wrapper">
+                    <a id="ontolinks" target="_blank" href="https://coursera.org/share/33b569acca93f5a21151e11a6c460fae">
+                    <div class="card">
+                        <img src="./images/courseracertf.png" alt="">
+                        <h2>Machine Learning</h2>
+                    </div>
+                    </a>
+                    <a id="ontolinks" target="_blank" href="https://www.credly.com/badges/35aab831-d0ed-4a3a-b6ed-d5594146d804/linked_in_profile">
+                    <div class="card">
+                        <img class="aws" src="./images/awscertf.png" alt="">
+                        <h2>AWS Cloud Operations</h2>
+                    </div>
+                </a>
+            </div>
+            </div>
+        </section>
+        <section id="projects" class="projects" flex>
+            <div class="container" flex>
+                <h1 class="project-heading">Projects</h1>
+                <div class="card-wrapper2">
+                    <a id="ontolinks" target="_blank" href="https://drive.google.com/file/d/1WBsnviM9jnn_LI1fiKr96PV4pR_Q5dF6/view?usp=sharing">
+                    <div class="card2" flex>
+                        <img src="./images/icontonictor.png" alt="">
+                        <h2>Tonictor</h2>
+                        <p>A Game Development Project made through Unity in a 3d environment.It has drivable cars and amazing game physics.It is a First Person Shooter Game</p>
+                    </div></a>
+                    <a id="ontolinks" target="_blank" href="https://github.com/goranmatolia/College-Management">
+                    <div class="card2" flex>
+                        <img id="cm" src="./images/College Management.png" alt="">
+                        <h2>College Management</h2>
+                        <p>College Management using C++<br>Project that is used to keep and maintain the complete record of Students and other Administrative Services</p>
+                    </div></a>
+                    <a id="ontolinks" target="_blank" href="https://youtu.be/qP20405-1go">
+                    <div class="card2" flex>
+                        <img id="m" src="./images/chaticon.png" alt="">
+                        <h2>Wavex Chat Room</h2>
+                        <p>A Client server based chat room.Where the Ui is designed using Tkinter.Multiple clients can connect and chat after adding their user name and authentication details.</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+        <section id="contactme" class="contactme">
+            <div class="container">
+                <h1 class="contact-heading"><span>Contact </span>Me</h1>
                 <div class="card-wrapper">
                     <div class="card">
-                        <img src="./images/web-development-svgrepo-com.svg" alt="">
-                        <h2>Web Development</h2>
-                        <p>Web development refers to the tasks associated with creating, building, and maintaining websites and web applications that run online on a browser. It also includes web design and database management.</p>
+                        <img src="./images/callme.png" alt="">
+                        <h1>Call Me</h1>
+                        <h6>+91 8000660394</h6>
                     </div>
                     <div class="card">
-                        <img src="./images/games.png" alt="">
-                        <h2>Game Development</h2>
-                        <p>Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release. </p>
+                        <img id="call" src="./images/emailme.png" alt="">
+                        <h1>Email Me</h1>
+                        <a id="text" href="mailto:goranmatolia2002@gmail.com"><h6>@goranmatolia2002@gmail.com</h6></a>
                     </div>
-                    <div class="card">
-                        <img src="./images/video-player-svgrepo-com.svg" alt="">
-                        <h2>Video Editing and Vfx</h2>
-                        <p>VFX compositors are responsible for creating photorealistic outputs by seamlessly integrating live action footage with computer graphics, 2D, 3D & special effects.</p>
-                    </div>
-                    <div class="card">
-                        <img src="./images/blockchain-svgrepo-com.svg" alt="">
-                        <h2>Blockchain Development</h2>
-                        <p>A blockchain is a decentralized digital ledger that saves transactions on thousands of computers around the globe. These are registered in a way that inhibits their subsequent modification.</p>
-                    </div>
-            </div>
-    </section>
-    <section id="certifications" class="certifications" flex>
-        <div class="container">
-            <h1 class="certifications-heading">Certifications</h1>
-            <div class="card-wrapper">
-                <a id="ontolinks" target="_blank" href="https://coursera.org/share/33b569acca93f5a21151e11a6c460fae">
-                <div class="card">
-                    <img src="./images/courseracertf.png" alt="">
-                    <h2>Machine Learning</h2>
-                </div>
-                </a>
-                <a id="ontolinks" target="_blank" href="https://www.credly.com/badges/35aab831-d0ed-4a3a-b6ed-d5594146d804/linked_in_profile">
-                <div class="card">
-                    <img class="aws" src="./images/awscertf.png" alt="">
-                    <h2>AWS Cloud Operations</h2>
-                </div>
-            </a>
-        </div>
-        </div>
-    </section>
-    <section id="projects" class="projects" flex>
-        <div class="container">
-            <h1 class="project-heading">Projects</h1>
-            <div class="card-wrapper2">
-                <a id="ontolinks" target="_blank" href="https://drive.google.com/file/d/1WBsnviM9jnn_LI1fiKr96PV4pR_Q5dF6/view?usp=sharing">
-                <div class="card2">
-                    <img src="./images/icontonictor.png" alt="">
-                    <h2>Tonictor</h2>
-                    <p>A Game Development Project made through Unity in a 3d environment.It has drivable cars and amazing game physics.It is a First Person Shooter Game</p>
-                </div></a>
-                <a id="ontolinks" target="_blank" href="https://github.com/goranmatolia/College-Management">
-                <div class="card2">
-                    <img id="cm" src="./images/College Management.png" alt="">
-                    <h2>College Management</h2>
-                    <p>College Management using C++<br>Project that is used to keep and maintain the complete record of Students and other Administrative Services</p>
-                </div></a>
-                <a id="ontolinks" target="_blank" href="https://youtu.be/qP20405-1go">
-                <div class="card2">
-                    <img id="m" src="./images/chaticon.png" alt="">
-                    <h2>Wavex Chat Room</h2>
-                    <p>A Client server based chat room.Where the Ui is designed using Tkinter.Multiple clients can connect and chat after adding their user name and authentication details.</p>
-                </div></a>
-            </div>
-        </div>
-    </section>
-    <section id="contactme" class="contactme">
-        <div class="container">
-            <h1 class="contact-heading"><span>Contact </span>Me</h1>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/callme.png" alt="">
-                    <h1>Call Me</h1>
-                    <h6>+91 8000660394</h6>
-                </div>
-                <div class="card">
-                    <img id="call" src="./images/emailme.png" alt="">
-                    <h1>Email Me</h1>
-                    <a id="text" href="mailto:goranmatolia2002@gmail.com"><h6>@goranmatolia2002@gmail.com</h6></a>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div  class="footerx">
-            <div class="footer-social">
-                <a target="_blank" href="https://www.linkedin.com/in/goranmatolia"><img src="./images/linkedin.png" alt=""></a>
-                <a target="_blank" href="https://www.instagram.com/goran.10_"><img src="./images/instagram.png" alt=""></a>
-                <a target="_blank" href="https://github.com/goranmatolia"><img src="./images/github.png" alt=""></a>
-                <a target="_blank" href="https://twitter.com/MatoliaGoran"><img src="./images/twitter.png" alt=""></a>
+        </section>
+        <footer>
+            <div  class="footerx">
+                <div class="footer-social">
+                    <a target="_blank" href="https://www.linkedin.com/in/goranmatolia"><img src="./images/linkedin.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/goran.10_"><img src="./images/instagram.png" alt=""></a>
+                    <a target="_blank" href="https://github.com/goranmatolia"><img src="./images/github.png" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/MatoliaGoran"><img src="./images/twitter.png" alt=""></a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+
 </body>
 </html>

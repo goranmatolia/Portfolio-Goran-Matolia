@@ -8,6 +8,10 @@
     --light:#f2f2f2;
     --secondary:#070606;
 }
+html,body{
+    overflow-x: hidden;
+  }
+
 body{
     font-family:Poppins,'sans-serif';
 }
@@ -15,7 +19,7 @@ html{
     scroll-behavior: smooth;
 }
 *{
-    padding:0;
+    padding:0;;
     margin:0;
     box-sizing:border-box;
     -webkit-font-smotthing:antialised;
@@ -28,6 +32,41 @@ header{
     padding:0 15px;
     margin:0 auto;
 }
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+    :root {
+        --size-divisor: 2;
+      }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+    :root {
+        --size-divisor: 1.5;
+      }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+    :root {
+        --size-divisor: 1;
+      }
+  }
+  
+  @media (min-width: 1200px) {
+    :root {
+        --size-divisor: .67;
+      }
+    .container {
+      max-width: 1152px;
+    }
+  }
 
 header nav .left a{
     color:var(--pure);
@@ -67,7 +106,7 @@ header nav .branding span{
 }
 .hero .right{
     color:var(--pure);
-    margin-left:6rem;
+    margin-left:2rem;
     margin-bottom:-1rem;
 }
 .hero .right  p span{
@@ -252,4 +291,163 @@ footer{
     margin:1rem;
 }
 
+@media (max-width:1024px){
+    header #main-nav{
+        display:none;
+    }
+}
+.site-main-wrapper{
+    position:relative;
+}
+.hamburger{
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:11;
+    background:none;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    display:none;
+}
+.hambrger img{
+    width:30px;
+}
 
+.mobile-nav{
+   position: fixed;
+   top:0;
+   left:0;
+   z-index:1001;
+   background:var(--light);
+   width:100%;
+   height:100%;
+   padding:2rem;
+   padding-top:5rem;
+   transform: translateX(-100%);
+   -webkit-transform: translateX(-100%);
+   -moz-transform: translateX(-100%);
+   -ms-transform: translateX(-100%);
+   -o-transform: translateX(-100%);
+   transition:all .5s ease-in-out;
+   -webkit-transition:all .5s ease-in-out;
+   -moz-transition:all .5s ease-in-out;
+   -ms-transition:all .5s ease-in-out;
+   -o-transition:all .5s ease-in-out;
+}
+.open{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform:translateX(0);
+    background-color: var(--ternary);
+}
+.times{
+   position:fixed;
+   top:30px;
+   right:30px;
+   border: none;
+   background:none;
+   outline:none;
+   cursor: pointer; 
+}
+.times img{
+    width:30px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color:var(--secondary);
+    text-decoration:none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px){
+    header #main-nav{
+        display:none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hero .left img{
+        width:260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top:10rem;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+    section.about .about-me-img{
+        height: 360px;
+    }
+    section.skills .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.certifications .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.projects .card-wrapper2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.projects{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 97%, 0 100%);
+    }
+}
+
+@media (max-width:520px){
+    .hero{
+        flex-direction:column;
+    }
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+    .hero .right{
+        top:2px;
+        padding:0 1rem;
+        background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .hero .left{
+        margin-top:-5rem;
+        margin-right: 0rem;
+        padding-bottom:4rem;
+    }
+    .right flex-1{
+
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top:2rem;
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section{
+        padding: 4rem 0;
+    }
+    section.skills .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top:6rem;
+    }
+    .section-heading + p{
+        margin-bottom: 3rem;
+    }
+    section.certifications .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contactme .card-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+    section.contactme .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
